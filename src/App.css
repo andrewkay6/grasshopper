@@ -22,7 +22,7 @@ body {
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 0.3%;
-    width: 100svw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     max-height: 6vh;
@@ -75,11 +75,15 @@ body {
     width: auto;
 }
 .kijijiLogo path {
-    fill: #383272;
+    fill: #383272;  
+    
+}
+.iconContainer svg{
     pointer-events: all;
 }
 .kijijiLogo:hover{
     cursor: pointer;
+    animation: pulse 2s infinite;
 }
 .kijijiLogo:hover path{
     cursor: pointer;
@@ -102,7 +106,11 @@ body {
     align-items: center;
 }
 .aboutSection, .pricingSection, .contactSection {
-    height: 100vh
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .logoContainer{
     display: flex;
@@ -119,6 +127,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     
 }
 .iconContainer{
@@ -133,4 +142,26 @@ body {
 }
 .clickableText:hover{
     cursor: pointer;
+}
+
+.grassCutPreviewContainer > img{
+    max-width: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.aboutContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+}
+
+.emailContainer{
+    font-size: 150%;
+}
+.aboutTextContainer{
+    max-width: 50%;
 }

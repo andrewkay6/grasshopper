@@ -5,8 +5,11 @@ const Contact = () => {
         <div className="contactSection" id="contactSectionID">
             <h1>Contact</h1>
             <div>
-                The best way to contact me is through email.
+                The best way to contact me is through email: 
             </div>
+            <a href="mailto:grasshopperkay@gmail.com" className="emailContainer">
+                grasshopperkay@gmail.com
+            </a>
             <div>
             Helpful things to include in an email:
             </div>
@@ -18,7 +21,7 @@ const Contact = () => {
             </ul>
 
             <div style={{fontWeight: "bold"}}>
-                Your address is the most important thing to include - it allows me to quote you in an accurate and timely manner. 
+                Note: Your address is the most important thing to include - it allows me to generate a quote in an accurate and timely manner. 
             </div>
         </div>
     );

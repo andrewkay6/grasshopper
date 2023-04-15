@@ -24,19 +24,18 @@ const Header = () => {
                 </div>
 
                 <div className='headerLinks'>
-                    <div className='headerText' title="About" onClick={() => scrollToElement('aboutSectionID', 'headerID')}>
+                    <div className='headerText' onClick={() => scrollToElement('aboutSectionID', 'headerID')}>
                         About
                     </div>
-                    <div className='headerText' title="Pricing" onClick={() => scrollToElement('pricingSectionID', 'headerID')}>
+                    <div className='headerText'  onClick={() => scrollToElement('pricingSectionID', 'headerID')}>
                         Pricing
                     </div>
-                    <div className='headerText' title="Contact" onClick={() => scrollToElement('contactSectionID', 'headerID')}>
+                    <div className='headerText' onClick={() => scrollToElement('contactSectionID', 'headerID')}>
                         Contact
                     </div>
                     <div className='iconContainer'>
                         <KijijiLogo
                             className='kijijiLogo'
-                            title="Kijiji"
                             onClick={handleKijijiClick} />
                     </div>
 
