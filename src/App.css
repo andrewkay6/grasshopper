@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    /* padding: 20px 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    max-height: 5vh;
+    position: sticky;
+    top: 0;
+}
+.headerRight { 
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.headerLeft{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    flex-grow: 1;
+}
+.headerText {
+    color: black;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.headerText:hover{
+    cursor: pointer;
+}
+.kijijiLogo{
+    width: 35px;
+    height: auto;
+}
+.grasshopperLogo{
+    height: 100%; 
+    width: auto;
+}
+.kijijiLogo path {
+    fill: #383272;
+}
+.kijijiLogo:hover{
+    cursor: pointer;
+}
+.kijijiLogo:hover path{
+    cursor: pointer;
+}
+.headerLinks {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 40%;
+}
+.headerTitle{
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.aboutSection, .pricingSection {
+    height: 100vh
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

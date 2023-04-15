@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import './app.css';
+import { ReactComponent as KijijiLogo } from './kijiji.svg';
+import { ReactComponent as GrassHopperLogo } from './grasshopper.svg';
+import Header from './Header';
+import About from './About';
+import Pricing from './Pricing';
+import Contact from './Contact';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header/>
+    <About/>
+    <Pricing/>
+    <Contact/>
+    </>
   );
 }
 
