@@ -11,6 +11,7 @@
 
 html {
     font-family: 'Open Sans';
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,9 +21,8 @@ body {
 .header {
     overflow: hidden;
     background-color: #f1f1f1;
-    /* padding: 20px 10px; */
     padding: 0.3%;
-    width: 100%;
+    width: 100svw;
     display: flex;
     flex-direction: row;
     max-height: 6vh;
@@ -84,13 +84,13 @@ body {
 .kijijiLogo:hover path{
     cursor: pointer;
 }
-.headerLinks {
+.headerLinks  {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    justify-content: space-between;
+      
 }
-.headerLinks *{
+.headerLinks > div{
     flex: 1;
 }
 .headerTitle{
@@ -119,6 +119,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .iconContainer{
     height: 100%;
@@ -127,4 +128,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.contentContainer{
+    max-width: fit-content;
+}
+.clickableText:hover{
+    cursor: pointer;
+}
