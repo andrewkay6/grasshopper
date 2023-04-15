@@ -1,17 +1,36 @@
 
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+    font-family: 'Open Sans';
+}
+
+body {
+    margin: 0;
+}
 
 .header {
     overflow: hidden;
     background-color: #f1f1f1;
     /* padding: 20px 10px; */
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     max-height: 5vh;
     position: sticky;
     top: 0;
+    box-sizing: border-box;
 }
+
 .headerRight { 
     margin-left: auto;
     display: flex;
@@ -21,7 +40,6 @@
 .headerLeft{
     display: flex;
     flex-direction: row;
-    margin-right: auto;
     flex-grow: 1;
 }
 .headerText {
@@ -36,7 +54,7 @@
     cursor: pointer;
 }
 .kijijiLogo{
-    width: 35px;
+    width: 10%;
     height: auto;
 }
 .grasshopperLogo{
@@ -57,17 +75,35 @@
     flex-direction: row;
     flex-grow: 1;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 40%;
+}
+.headerLinks *{
+    flex: 1;
 }
 .headerTitle{
     font-weight: bold;
+    font-size: 120%;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
-.aboutSection, .pricingSection {
+.aboutSection, .pricingSection, .contactSection {
     height: 100vh
+}
+.logoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding-left: 1%;
+    padding-right: 10%;  
+}
+.footerSection{
+    height: 10vh;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 

@@ -6,13 +6,17 @@ import Header from './Header';
 import About from './About';
 import Pricing from './Pricing';
 import Contact from './Contact';
+import Footer from './Footer';
 function App() {
   return (
     <>
-    <Header/>
-    <About/>
-    <Pricing/>
-    <Contact/>
+      <Header />
+      <div className='contentContainer'>
+        <About />
+        <Pricing />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 }
