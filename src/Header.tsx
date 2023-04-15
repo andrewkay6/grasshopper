@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as KijijiLogo } from './kijiji.svg';
 import { ReactComponent as GrassHopperLogo } from './grasshopper.svg';
+import scrollToElement from "./scrollUtilities";
 const Header = () => {
     const kijijiProfileUrl = 'https://www.kijiji.ca/o-profile/1001385209/listings/1';
     const handleKijijiClick = () => {
@@ -13,7 +14,7 @@ const Header = () => {
 
 
     return (
-        <div className='header'>
+        <div className='header' id='headerID'>
             <div className='headerLeft'>
                 <div className='logoContainer' title="The Grasshopper">
                     <GrassHopperLogo className='grasshopperLogo' />
@@ -21,28 +22,24 @@ const Header = () => {
                         The Grasshopper
                     </div>
                 </div>
-                
+
                 <div className='headerLinks'>
-                    <div className='headerText' onClick={
-                        () => {
-                            const about = document.getElementById('aboutSectionID');
-                            if (about) {
-                                about.scrollIntoView({ behavior: 'smooth' });
-                            }
-                        }
-                    }>
+                    <div className='headerText' title="About" onClick={() => scrollToElement('aboutSectionID', 'headerID')}>
                         About
                     </div>
-                    <div className='headerText' title="Pricing">
+                    <div className='headerText' title="Pricing" onClick={() => scrollToElement('pricingSectionID', 'headerID')}>
                         Pricing
                     </div>
-                    <div className='headerText' title="Contact">
+                    <div className='headerText' title="Contact" onClick={() => scrollToElement('contactSectionID', 'headerID')}>
                         Contact
                     </div>
-                    <KijijiLogo 
-                className='kijijiLogo' 
-                title="Kijiji" 
-                onClick={handleKijijiClick}/>
+                    <div className='iconContainer'>
+                        <KijijiLogo
+                            className='kijijiLogo'
+                            title="Kijiji"
+                            onClick={handleKijijiClick} />
+                    </div>
+
                 </div>
 
             </div>
