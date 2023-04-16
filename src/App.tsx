@@ -1,5 +1,5 @@
 import React from 'react';
-import './app.css';
+import './App.css';
 import { ReactComponent as KijijiLogo } from './kijiji.svg';
 import { ReactComponent as GrassHopperLogo } from './grasshopper.svg';
 import Header from './Header';
