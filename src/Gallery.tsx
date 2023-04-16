@@ -8,7 +8,6 @@ const Gallery = () => {
                 <div className="galleryContainer">
                     <div className="galleryImageContainer">
                         <img src={grasscutpreview} alt="Lawn Mowing" className="galleryImage" />
-
                     </div>
                 </div>
             </div>

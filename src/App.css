@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    overflow: hidden;
 
 
 }
@@ -126,7 +127,7 @@ body {
     align-items: center;
 }
 
-.aboutSection,
+.heroSection,
 .pricingSection,
 .contactSection,
 .gallerySection {
@@ -138,7 +139,7 @@ body {
 
 }
 
-.aboutContainer,
+.heroContainer,
 .pricingContainer,
 .contactContainer {
     font-size: 100%;
@@ -151,10 +152,15 @@ body {
 
 @media screen and (min-width: 768px) {
 
-    .aboutContainer,
+    .heroContainer,
     .pricingContainer,
-    .contactContainer {
+    .contactContainer,
+    .aboutContainer {
         font-size: 150%;
+    }
+
+    .heroTextContainer{
+        max-width: 70%;
     }
 }
 
@@ -167,6 +173,9 @@ body {
     padding-left: 1%;
     padding-right: 10%;
 
+}
+.logoContainer:hover{
+    cursor: pointer;
 }
 
 .footerSection {
@@ -198,8 +207,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 100%;
-
-
 }
 
 .clickableText:hover {
@@ -219,7 +226,7 @@ body {
 
 }
 
-.aboutContainer {
+.heroContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -243,9 +250,6 @@ body {
     margin-bottom: 20%;
 }
 
-.contactContainer li {
-    text-align: left;
-}
 
 .emailContainer {
     font-size: 130%;
@@ -268,7 +272,7 @@ body {
 
 @media screen and (max-width: 1024px) {
 
-    .aboutSection,
+    .heroSection,
     .pricingSection,
     .contactSection {
         max-width: 100%;
@@ -286,14 +290,17 @@ body {
     }
 }
 
-.aboutHeroImageContainer {
+.heroImageContainer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.imgur.com/0SWbRRa.jpeg");
+    
+    background-repeat: no-repeat;
     min-height: 100vh;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .heroText {
@@ -347,4 +354,16 @@ body {
 .galleryImage {
     max-width: 100%;
     height: auto;
+}
+.heroTextContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.roundedDarkBackground{
+    background-color: #d1e0d1;
+    list-style: none;
+    border-radius: 5px;
+    padding: 1%;
 }

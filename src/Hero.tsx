@@ -1,22 +1,16 @@
 import scrollToElement from "./scrollUtilities";
-const About = () => {
+const Hero = () => {
     return (
-        <div className="aboutSection" id="aboutSectionID">
-            <div className="aboutContainer">
-                <div className="aboutHeroImageContainer">
-                    <div className="aboutTextContainer">
+        <div className="heroSection" id="heroSectionID">
+            <div className="heroContainer">
+                <div className="heroImageContainer">
+                    <div className="heroTextContainer">
                         <div className="heroText">
                             Hi! I'm The Grasshopper. 
                         </div>
                         <div className="heroText">
                             I provide quick, high quality lawn mowing services in the Hamilton area.
                         </div>
-                        {/* <span
-                            className='clickableText'
-                            style={{ fontWeight: "bold" }}
-                            onClick={() => scrollToElement('contactSectionID', 'headerID')}>
-                            &nbsp;contact me.
-                        </span> */}
 
                         <button
                         className="contactButton" 
@@ -34,4 +28,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Hero;

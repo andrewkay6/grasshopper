@@ -5,12 +5,10 @@ import KijijiButton from "./KijijiButton";
 import scrollToElement from "./scrollUtilities";
 const Header = () => {
     
-
-
     return (
         <div className='header' id='headerID'>
             <div className='headerLeft'>
-                <div className='logoContainer'>
+                <div className='logoContainer' onClick={() => scrollToElement('heroSectionID', 'headerID')}>
                     <GrassHopperLogo className='grasshopperLogo' />
                     <div className='headerTitle'>
                         The Grasshopper
@@ -18,7 +16,7 @@ const Header = () => {
                 </div>
 
                 <div className='headerLinks'>
-                    <div className='headerText headerTextHover' onClick={() => scrollToElement('aboutSectionID', 'headerID')}>
+                    <div className='headerText headerTextHover' onClick={() => scrollToElement('heroSectionID', 'headerID')}>
                         About
                     </div>
                     <div className='headerText headerTextHover' onClick={() => scrollToElement('contactSectionID', 'headerID')}>

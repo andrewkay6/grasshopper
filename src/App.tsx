@@ -1,15 +1,16 @@
 import './App.css';
 import Header from './Header';
-import About from './About';
+import Hero from './Hero';
 import Contact from './Contact';
 import Footer from './Footer';
 import Gallery from './Gallery';
+
 function App() {
   return (
     <div className='appContainer'>
         <Header />    
       <div className='contentContainer'>
-        <About />
+        <Hero />
         <Contact />
         <Gallery />
       </div>

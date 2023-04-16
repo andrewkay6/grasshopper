@@ -3,22 +3,25 @@ const Contact = () => {
     return (
         <div className="contactSection" id="contactSectionID">
             <div className="sectionHeader">Contact</div>
-            <div className="contactContainer" >
+            <div className="contactContainer"  >
                 <div
+                className="roundedDarkBackground"
                 style={{
                     display: "flex",
                     flexDirection: "column",
+                    padding: "5%"
 
                 }}>
+                    
                     <div>
-                        <div >
-                            The best way to contact me is through email:
+                        <div  >
+                            The best way to contact me is by email:
                         </div>
                         <a href="mailto:grasshopperkay@gmail.com" className="emailContainer">
                             grasshopperkay@gmail.com
                         </a>
                     </div>
-
+                    <br/>
                     <div>
                         Or, you can reply to one of my Kijiji ads:
                     </div>
@@ -30,15 +33,7 @@ const Contact = () => {
                 </div>
                 <br/>
                 <br/>
-                <div style={{fontWeight: "bold"}}>
-                    Please include:
-                    <ul title="Please include">
-                        <li >Your address</li>
-                        <li>How often do you want your lawn mowed?</li>
-                        <li>How big is your lawn? (A rough estimate is great).</li>
-                        <li>Do you have any pets?</li>
-                    </ul>
-                </div>
+               
 
 
 
