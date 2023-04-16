@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
@@ -8,7 +7,13 @@
     src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+.appContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+}
 html {
     font-family: 'Open Sans';
     scroll-behavior: smooth;
@@ -26,22 +31,17 @@ body {
     display: flex;
     flex-direction: row;
     max-height: 6vh;
-    position: sticky;
+    position: fixed;
     top: 0;
     box-sizing: border-box;
 }
 
-.headerRight { 
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.headerLeft{
+.headerLeft {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
 }
+
 .headerText {
     color: black;
     text-align: center;
@@ -50,54 +50,69 @@ body {
     justify-content: center;
     align-items: center;
 }
-.headerText:hover{
+
+.headerText:hover {
     cursor: pointer;
     animation: pulse 2s infinite;
 }
+
 @keyframes pulse {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
 }
-.kijijiLogo{
+
+.kijijiLogo {
     height: 70%;
+    max-height: 50px;
     width: auto;
     pointer-events: none;
 }
-.grasshopperLogo{
-    height: 100%; 
+
+.grasshopperLogo {
+    height: 100%;
+    max-height: 70px;
     width: auto;
 }
+
 .kijijiLogo path {
-    fill: #383272;  
-    
+    fill: #383272;
+
 }
-.iconContainer svg{
+
+.iconContainer svg {
     pointer-events: all;
 }
-.kijijiLogo:hover{
+
+.kijijiLogo:hover {
     cursor: pointer;
     animation: pulse 2s infinite;
 }
-.kijijiLogo:hover path{
+
+.kijijiLogo:hover path {
     cursor: pointer;
 }
-.headerLinks  {
+
+.headerLinks {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-      
+
 }
-.headerLinks > div{
+
+.headerLinks>div {
     flex: 1;
 }
-.headerTitle{
+
+.headerTitle {
     font-weight: bold;
     font-size: 120%;
     display: flex;
@@ -105,46 +120,71 @@ body {
     justify-content: center;
     align-items: center;
 }
-.aboutSection, .pricingSection, .contactSection {
-    height: 100vh;
+
+.aboutSection,
+.pricingSection,
+.contactSection,
+.gallerySection {
+    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
 }
-.logoContainer{
+
+.aboutContainer, 
+.pricingContainer,
+.contactContainer {
+    font-size: 120%;
+    text-align: center;
+    width: 100%;
+}
+
+.logoContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     padding-left: 1%;
-    padding-right: 10%;  
+    padding-right: 10%;
+
 }
-.footerSection{
+.footerSection {
     height: 10vh;
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    
+    width: 100% !important;
+    font-size: 80%;
+
 }
-.iconContainer{
+
+.iconContainer {
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.contentContainer{
-    max-width: fit-content;
+
+.contentContainer {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.clickableText:hover{
+
+.clickableText:hover {
     cursor: pointer;
 }
 
-.grassCutPreviewContainer > img{
+.grassCutPreviewContainer>img {
     max-width: 100%;
     object-fit: cover;
     display: flex;
@@ -152,16 +192,88 @@ body {
     align-items: center;
 
 }
-.aboutContainer{
+
+.aboutContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    margin-bottom: 20%;
+}
+.pricingContainer{
+    margin-bottom: 20%;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20%;
+}
+.galleryContainer {
+    margin-bottom: 20%;
+}
+.contactContainer li {
+    text-align: left;
 }
 
-.emailContainer{
+.emailContainer {
     font-size: 150%;
+    color: rgb(113, 114, 167);
+    /* background: #f1f1f1; */
+    margin: 1%;
+    padding: 1%;
 }
-.aboutTextContainer{
-    max-width: 50%;
+
+@media screen and (max-width: 1024px) {
+    .aboutSection,
+    .pricingSection,
+    .contactSection{
+        max-width: 100%;
+        width: 100%; 
+    }
+  }
+
+  @media screen and (max-width: 515px) {
+    .headerLinks{
+        display: none; 
+    }
+    .logoContainer{
+        flex: 1;
+    }
+  }
+.aboutHeroImageContainer{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://i.imgur.com/0SWbRRa.jpeg");
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heroText{
+    font-size: 250%;
+    flex: 1;
+    color: white;
+}
+.heroTextContainer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.contactButton{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 1%;
+    font-size: 120%;
+    border-radius: 5px;
+    margin: 1%;
+}
+.contactButton:hover{
+    cursor: pointer;
+    background-color: #f1f1f1;
+    
 }

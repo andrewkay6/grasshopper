@@ -4,23 +4,30 @@ import scrollToElement from "./scrollUtilities";
 const About = () => {
     return (
         <div className="aboutSection" id="aboutSectionID">
-            <h1>About</h1>
             <div className="aboutContainer">
-                <div className="aboutTextContainer">
-                    <span>
-                        Hi! I'm The Grasshopper. I provide quick, high quality lawn mowing services in the Hamilton area.
-                        I am very reliable and I take pride in my work. I am currently accepting new clients. If you are interested in my services, please
-                    </span>
-                    <span
-                        className='clickableText'
-                        style={{ fontWeight: "bold" }}
+                <div className="aboutHeroImageContainer">
+                    <div className="aboutTextContainer">
+                        <div className="heroText">
+                            Hi! I'm The Grasshopper. 
+                        </div>
+                        <div className="heroText">
+                            I provide quick, high quality lawn mowing services in the Hamilton area.
+                        </div>
+                        {/* <span
+                            className='clickableText'
+                            style={{ fontWeight: "bold" }}
+                            onClick={() => scrollToElement('contactSectionID', 'headerID')}>
+                            &nbsp;contact me.
+                        </span> */}
+
+                        <button
+                        className="contactButton" 
                         onClick={() => scrollToElement('contactSectionID', 'headerID')}>
-                        &nbsp;contact me.
-                    </span>
+                            Contact me
+                        </button>
+                    </div>
                 </div>
-                <div className="grassCutPreviewContainer">
-                    <img src={grasscutpreview} alt="grasscutpreview" />
-                </div>
+
             </div>
 
 

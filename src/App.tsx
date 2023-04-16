@@ -7,17 +7,19 @@ import About from './About';
 import Pricing from './Pricing';
 import Contact from './Contact';
 import Footer from './Footer';
+import Gallery from './Gallery';
 function App() {
   return (
-    <>
+    <div className='appContainer'>
       <Header />
       <div className='contentContainer'>
         <About />
-        <Pricing />
+        {/* <Pricing /> */}
         <Contact />
-        <Footer />
+        <Gallery />
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 
