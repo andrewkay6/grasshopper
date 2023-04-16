@@ -23,7 +23,7 @@ const About = () => {
                         <button
                         className="contactButton" 
                         onClick={() => scrollToElement('contactSectionID', 'headerID')}>
-                            Contact me
+                            Contact Me
                         </button>
                     </div>
                 </div>

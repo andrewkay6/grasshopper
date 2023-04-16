@@ -11,7 +11,7 @@ import Gallery from './Gallery';
 function App() {
   return (
     <div className='appContainer'>
-      <Header />
+        <Header />    
       <div className='contentContainer'>
         <About />
         {/* <Pricing /> */}

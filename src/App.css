@@ -12,6 +12,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    
 
 }
 html {
@@ -25,8 +27,9 @@ body {
 
 .header {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #d1e0d1;
     padding: 0.3%;
+    max-width: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -53,8 +56,8 @@ body {
 
 .headerText:hover {
     cursor: pointer;
-    animation: pulse 2s infinite;
-}
+    background-color: rgba(0, 0, 0, 0.1);
+} 
 
 @keyframes pulse {
     0% {
@@ -136,10 +139,14 @@ body {
 .aboutContainer, 
 .pricingContainer,
 .contactContainer {
-    font-size: 120%;
+    font-size: 100%;
     text-align: center;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .logoContainer {
     display: flex;
@@ -152,7 +159,7 @@ body {
 }
 .footerSection {
     height: 10vh;
-    background-color: #f1f1f1;
+    background-color: #d1e0d1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,16 +178,22 @@ body {
 }
 
 .contentContainer {
-    
+    background-color: rgb(240, 250, 236);
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0 0;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 100%;
+    
+
 }
 
 .clickableText:hover {
+    cursor: pointer;
+}
+.clickableSVG:hover {
     cursor: pointer;
 }
 
@@ -218,11 +231,17 @@ body {
 }
 
 .emailContainer {
-    font-size: 150%;
+    font-size: 130%;
     color: rgb(113, 114, 167);
     /* background: #f1f1f1; */
     margin: 1%;
     padding: 1%;
+    text-decoration: none;
+    white-space: pre-wrap; /* CSS3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 @media screen and (max-width: 1024px) {
@@ -244,7 +263,8 @@ body {
   }
 .aboutHeroImageContainer{
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://i.imgur.com/0SWbRRa.jpeg");
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -254,6 +274,8 @@ body {
     font-size: 250%;
     flex: 1;
     color: white;
+    white-space: pre-wrap; /* CSS3 */    
+ 
 }
 .heroTextContainer{
     display: flex;
@@ -264,7 +286,7 @@ body {
 
 }
 .contactButton{
-    background-color: #ffffff;
+    background-color: #d1e0d1;
     color: rgb(0, 0, 0);
     border: none;
     padding: 1%;
@@ -274,6 +296,23 @@ body {
 }
 .contactButton:hover{
     cursor: pointer;
-    background-color: #f1f1f1;
+    background-color: #b2bdb2;
     
 }
+.sectionHeader {
+    font-size: 350%;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.galleryImageContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .galleryImage {
+    max-width: 100%;
+    height: auto;
+  }
