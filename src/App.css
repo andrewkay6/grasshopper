@@ -7,15 +7,17 @@
     src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-.appContainer{
+
+.appContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    
+
 
 }
+
 html {
     font-family: 'Open Sans';
     scroll-behavior: smooth;
@@ -57,7 +59,7 @@ body {
 .headerText:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1);
-} 
+}
 
 @keyframes pulse {
     0% {
@@ -133,10 +135,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.aboutContainer, 
+.aboutContainer,
 .pricingContainer,
 .contactContainer {
     font-size: 100%;
@@ -146,12 +148,14 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 @media screen and (min-width: 768px) {
-    .aboutContainer, 
-.pricingContainer,
-.contactContainer {
-    font-size: 150%;
-}
+
+    .aboutContainer,
+    .pricingContainer,
+    .contactContainer {
+        font-size: 150%;
+    }
 }
 
 
@@ -164,6 +168,7 @@ body {
     padding-right: 10%;
 
 }
+
 .footerSection {
     height: 10vh;
     background-color: #d1e0d1;
@@ -193,13 +198,14 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 100%;
-    
+
 
 }
 
 .clickableText:hover {
     cursor: pointer;
 }
+
 .clickableSVG:hover {
     cursor: pointer;
 }
@@ -220,19 +226,23 @@ body {
     align-items: center;
     margin-bottom: 20%;
 }
-.pricingContainer{
+
+.pricingContainer {
     margin-bottom: 20%;
 }
-.contactContainer{
+
+.contactContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-bottom: 20%;
 }
+
 .galleryContainer {
     margin-bottom: 20%;
 }
+
 .contactContainer li {
     text-align: left;
 }
@@ -244,32 +254,40 @@ body {
     margin: 1%;
     padding: 1%;
     text-decoration: none;
-    white-space: pre-wrap; /* CSS3 */    
-    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-    white-space: -pre-wrap; /* Opera 4-6 */    
-    white-space: -o-pre-wrap; /* Opera 7 */    
-    word-wrap: break-word; /* Internet Explorer 5.5+ */
+    white-space: pre-wrap;
+    /* CSS3 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
 }
 
 @media screen and (max-width: 1024px) {
+
     .aboutSection,
     .pricingSection,
-    .contactSection{
+    .contactSection {
         max-width: 100%;
-        width: 100%; 
+        width: 100%;
     }
-  }
+}
 
-  @media screen and (max-width: 515px) {
-    .headerLinks{
-        display: none; 
+@media screen and (max-width: 515px) {
+    .headerLinks {
+        display: none;
     }
-    .logoContainer{
+
+    .logoContainer {
         flex: 1;
     }
-  }
-.aboutHeroImageContainer{
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://i.imgur.com/0SWbRRa.jpeg");
+}
+
+.aboutHeroImageContainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.imgur.com/0SWbRRa.jpeg");
     min-height: 100vh;
     height: 100%;
     width: 100%;
@@ -277,14 +295,17 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.heroText{
+
+.heroText {
     font-size: 250%;
     flex: 1;
     color: white;
-    white-space: pre-wrap; /* CSS3 */    
- 
+    white-space: pre-wrap;
+    /* CSS3 */
+
 }
-.heroTextContainer{
+
+.heroTextContainer {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -292,7 +313,8 @@ body {
     align-items: center;
 
 }
-.contactButton{
+
+.contactButton {
     background-color: #d1e0d1;
     color: rgb(0, 0, 0);
     border: none;
@@ -301,25 +323,28 @@ body {
     border-radius: 5px;
     margin: 1%;
 }
-.contactButton:hover{
+
+.contactButton:hover {
     cursor: pointer;
     background-color: #b2bdb2;
-    
+
 }
+
 .sectionHeader {
     font-size: 350%;
     font-weight: bold;
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
 .galleryImageContainer {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .galleryImage {
+}
+
+.galleryImage {
     max-width: 100%;
     height: auto;
-  }
+}

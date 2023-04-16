@@ -1,5 +1,3 @@
-import React from "react";
-import grasscutpreview from './grasscutpreview.webp';
 import scrollToElement from "./scrollUtilities";
 const About = () => {
     return (

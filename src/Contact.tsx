@@ -1,5 +1,3 @@
-import React from "react";
-import { ReactComponent as KijijiLogo } from "./kijiji.svg";
 import KijijiButton from "./KijijiButton";
 const Contact = () => {
     return (
