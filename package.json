@@ -2,6 +2,7 @@
   "name": "grasshopper",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://andrewkay6.github.io/grasshopper",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
